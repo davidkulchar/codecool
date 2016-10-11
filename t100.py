@@ -13,7 +13,7 @@ def ajtonyitas(number) :
                     door[each]=True
                 else :
                     door[each]=False
-            number = number + 1
+        number = number + 1
         ajtonyitas(number)
 
 
@@ -21,7 +21,7 @@ def output() :
     result=[]
     for each in range(100): 
         if door[each] == True :
-            result.append(int(door)+1)
-    print (result)
+            result.append(each+1)
+    print ("The following doors are open:", result )
 
 ajtonyitas(number)

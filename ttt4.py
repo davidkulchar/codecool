@@ -76,6 +76,8 @@ def isWin(board, currentPlayer):
         return False
 
 def win(currentPlayer, board):
+    print("\nTaddaaa!")
+    print("********")
     drawBoard(board)
     print ("\nThe Winner is:", currentPlayer, "\n")
 
@@ -86,6 +88,8 @@ def isBoardFull(board):
     return True
 
 def isTie(board):
+    print ("\nTam-dam-dam...")
+    print("************")
     drawBoard(board)
     print ("\nThe game is tie! \n")
     
@@ -109,7 +113,7 @@ def startGame():
         playerStep(board, currentPlayer)
         if not isGameOver(board, currentPlayer):
             currentPlayer = switchPlayer(currentPlayer)
-        elif isGameOver(board, currentPlayer):
+        else:
             break
 
 startGame()
